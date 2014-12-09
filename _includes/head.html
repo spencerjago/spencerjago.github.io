@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ site.description }}">
+<meta name="author" content="{{ site.author }}">
+<title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+/* Custom page CSS
+-------------------------------------------------- */
+body > .container {
+  padding: 50px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+</style>

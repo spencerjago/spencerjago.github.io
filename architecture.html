@@ -1,0 +1,91 @@
+---
+layout: default
+title: Architecture
+permalink: /architecture/
+---
+<style>
+
+.link {
+  stroke: #ccc;
+}
+
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+
+.ttip {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -moz-border-radius:3px;
+  border-radius: 3px;
+  border: 2px solid #DDD;
+  background: #fff;
+  opacity: 1;
+  color: #000;
+  padding: 10px;
+  width: 450px;
+  font-size: 15px;
+  z-index: 120;
+}
+
+</style>
+
+<div class="jumbotron">
+  <h1>Architecture</h1>
+  <p><a href="https://www.flickr.com/photos/psd/14303042970" title="Land Registry by Paul Downey, on Flickr"><img src="https://camo.githubusercontent.com/77637607d11a2943dbfa7f6e65d5745ed24798d4/68747470733a2f2f6661726d342e737461746963666c69636b722e636f6d2f333834312f31343330333034323937305f633562313438313931635f632e6a7067" width="800" height="500" alt="Land Registry" data-canonical-src="https://farm4.staticflickr.com/3841/14303042970_c5b148191c_c.jpg" style="max-width:100%;"></a></p>
+</div>
+
+<h2>Iterations</h2>
+<p>The architecture of the alpha has emerged during development to answer the needs of users. The following architectural diagrams were developed primarily to assist sprint planning:</p>
+<ul>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/concept">Concept</a> — our discovery phase</li>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/sprint0">Sprint 0</a> — seeding the architecture</li>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/sprint1">Sprint 1</a> – minimum, viable title creation</li>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/sprint2">Sprint 2</a> — auditing and logging</li>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/sprint3">Sprint 3</a> — making a decision</li>
+  <li><a href="https://github.com/LandRegistry/architecture/tree/master/sprint4">Sprint 4</a> — identity, matching and ownership services</li>
+</ul>
+
+<h2>Current status</h2>
+<p>The current architecture, automatically generated from the source code repositories. Please double click on an application to view the corresponding code repository.</p>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/d3-v3-min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/architecture.js"></script>
+
+<h2>Dashboards</h2>
+
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Service name</th>
+    <th>Github</th>
+    <th>Heroku</th>
+    <th>URL</th>
+    <th>Port</th>
+    <th>Tech</th>
+    <th>Dependencies</th>
+  </tr>
+
+  {% for service in site.data.services.development %}
+  <tr>
+    <td>{{ service.name }}</td>
+    <td><a href="{{ service.github }}">{{ service.github }}</a></td>
+    <td>{{ service.heroku }}</td>
+    <td><a href="{{ service.url }}">{{ service.url }}</a></td>
+    <td>{{ service.port }}</td>
+    <td>
+      {% for tech in service.tech %}
+      {{ tech }} <br>
+      {% endfor %}
+    </td>
+    <td>
+      {% for dep in service.dependencies %}
+      {{ dep }} <br>
+      {% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

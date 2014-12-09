@@ -3,7 +3,6 @@ title: "Land Registry Digital Service"
 description: "Land Registry Digital Service"
 author: "Land Registry Digital Service"
 baseurl: ""
-url: "http://www.landregistryconcept.co.uk/"
 
 # Build settings
 markdown: kramdown

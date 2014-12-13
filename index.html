@@ -2,37 +2,36 @@
 layout: default
 title: Home
 ---
-<div class="jumbotron">
-  <h1>Land Registry Digital Service</h1>
-  <p>The <a href="https://www.gov.uk/government/organisations/land-registry">Land Registry</a> are working with <a href="https://www.gov.uk/government/organisations/government-digital-service">The Government Digital Service (GDS)</a> to build a new digital service. The service will form a part of <a href="https://www.gov.uk">GOV.UK</a> and is currently in <a href="https://www.gov.uk/service-manual/phases/alpha.html">alpha</a> phase following guidance in the <a href="https://www.gov.uk/service-manual">Government Service Design Manual</a> in order to meet the <a href="https://www.gov.uk/service-manual/digital-by-default">Government Digital By Default Service Standard</a>.</p>
-  <p>The service is being built in the open, with the <a href="https://github.com/landregistry">code</a> developed as open source, and the <a href="/architecture/">architecture</a> and other documentation published under the open government licence.</p>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
 
-<h2>Purpose</h2>
-<p>
-  The alpha will be a minimal viable product of :
-</p>
-
-<ul>
-  <li>The irreducible core of a digital first Land Registry, from the user interface to the system of record, a single digital service that meets the needs of conveyancers, proprietors, lenders and caseworkers while meeting statutory requirements.</li>
-  <li>This means the ability to create, store, find, apply to change and change register entries, while showing how fraud can be designed out and security designed in.</li>
-  <li>It will not have every feature, only the minimum required to operate the service end-to-end, but it will be a useable system that we can test with real users and will help guide the services we plan to develop at beta stage.</li>
-</ul>
-<p>
-  This will continue to build a digital culture within Land Registry through the adoption of multidisciplinary agile teams.
-</p>
-
-<p>
-  The objective is to build a working service prototype. This will be used by selected stakeholders and/or a closed group of end users to:
-</p>
-<ul>
-  <li>gain greater understanding of Land Registry services</li>
-  <li>test design approach</li>
-  <li>test some technologies</li>
-  <li>gain shared understanding of the service at a coding and integration level</li>
-</ul>
-
-<h2>Blogs</h2>
-<p>
-  We've been 'blogging' throughout our Alpha journey and featured topics on <a href="http://blog.landregistry.gov.uk/register-jim-know/">citizen user research</a>, <a href="http://blog.landregistry.gov.uk/getting-alpha-user-stories-straight/">user research techniques</a>, <a href="http://blog.landregistry.gov.uk/macbook-trendy-stickers/">agile methodology</a>, <a href="http://blog.landregistry.gov.uk/land-registry-user-testing-digital-services/">prototype user testing</a>, our journey through the <a href="http://blog.landregistry.gov.uk/steel-thread-digital-services/">Alpha</a> and the <a href="http://blog.landregistry.gov.uk/new-digital-services-working-alpha/">background to the Alpha</a>.
-</p>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Jago Home
 tagline:          'The Jago House Swaps'
-description:      'Details of the Jago home and also of house swaps we have already done'
+description:      'All about our house, the surrounding area and our house swaps'
 url:              http://www.jagohome.co.uk
 baseurl:          /
 

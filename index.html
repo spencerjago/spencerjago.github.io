@@ -1,37 +1,16 @@
 ---
-layout: default
+layout: page
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<link href="/public/css/lightbox.css" rel="stylesheet" />
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<ul style="list-style-type:none">
+    <li>
+        <a class="example-image-link" href="/assets/front.JPG" data-lightbox="images" data-title="My caption1"><img class="example-image" src="/assets/front.JPG" alt="" style="width:152px;height:114px"></a>
+        <a class="example-image-link" href="/assets/lounge.JPG" data-lightbox="images" data-title="My caption2"><img class="example-image" src="/assets/lounge.JPG" alt="" style="width:152px;height:114px"></a>
+        <a class="example-image-link" href="/assets/lounge2.JPG" data-lightbox="images" data-title="My caption3"><img class="example-image" src="/assets/lounge2.JPG" alt="" style="width:152px;height:114px"></a>
+    </li>
+</Ul>
+<script src="/public/js/jquery-1.11.0.min.js"></script>
+<script src="/public/js/lightbox.min.js"></script>

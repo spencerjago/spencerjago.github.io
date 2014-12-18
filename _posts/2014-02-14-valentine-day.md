@@ -1,0 +1,14 @@
+---
+layout: post
+title: Valentine day
+---
+
+Well missus, we were supposed to be going to Yorkshire me and you this weekend but the weather is so awful that I have decided not to drive up there. It’s not safe. The weather has been awful for weeks and thousands of people in Somerset and the south east of England have been flooded. There are whole villages travelling around by boat. The scary thing is, because the water levels are so high, they are likely to be flooded for months. It’s not good.
+
+So, we have an unexpected weekend at home. I have been trying to fill it with visits to your (and my) friends. Dad is a bit gutted because he was looking forward to a weekend on his own. Never mind! I haven’t told you yet and you’ll probably kick off because you wanted to see your cousins. It would also have been our last visit to Grandma’s house because the next time we get chance to go they will have moved! 
+
+I have tried to soften the blow by going home this lunchtime in the driving rain so I could (pretend to) post a valentines card for you through our letter box. You got a bit upset thismorning that no one had got you one so I said – stupidly – maybe there will be one in the post. Well now there is and I even put a stamp on the envelope… At least it means you can go to your valentines disco tonight. I now also have to help out and will no doubt be on squash duty for the duration. This is harder than you think.
+
+The last few weeks have been a bit rubbish – partly the weather but I have also been doing some studying to get my professional qualification and have been in work one day every weekend for the last 5 weeks. I have finished now though so really looking forward to a weekend just with you! We had an exciting morning last Sunday – Sam Jones’s sister won a bronze medal snowboarding at the Winter Olympics in Sochi (Russia) so we were all glued to the TV yelling. So, you are good friends with the niece of an Olympic bronze medallist… you never know when you might want to bring that one out!
+
+Your reading is going really well, you’re spelling out words very easily and you want to know things ‘about the world’ all the time. Yesterday we talked about precipitation and you remembered all of it, especially me telling you that clouds are like water drops having a party and when they get tired they fall down. Not sure I should have told you that! You did make some social observations about war when I told you about Afghanistan, Syria and the second world war. You said ‘mum, that’s just silly, if people don’t agree they should just talk to each other’… Maybe you will be a politician… You still say you want to be a car washer..

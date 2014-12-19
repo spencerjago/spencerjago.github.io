@@ -2,9 +2,53 @@
   description: This is a gallery of our home
   imagefolder: /assets/home
   images:
+  - name: front.JPG
+    text: The front of our house. The driveway will hold 2-3 cars
+  - name: lounge.JPG
+    text: Our Lounge
+  - name: lounge2.JPG
+    text: The other view of our lounge. We have plenty of books to read
   - name: bathroom.JPG
-    text: The first image
-  - name: bavaria.JPG
-    text: The second image
+    text: The main bathroom with large corner bath and corner walk in shower
+  - name: kitchen.JPG 
+    text: The kitchen. The island unit has stools where you can sit and enjoy the views.  The door you can see leads to a downstairs WC and the integral garage
+  - name: family.JPG 
+    text: View from the kitchen to the family / dining room. The downstairs is mostly open plan
+  - name: dining.JPG
+    text: Dining Area. This comfortably accommodates 6 but can accommodate 8
+  - name: doors.JPG
+    text: View from living space out onto patio and garden
+  - name: master.JPG 
+    text: Master bedroom with en-suite
+  - name: guest.JPG 
+    text: Guest bedroom with great views over Plymouth Sound and Cornwall
+  - name: emily.JPG  
+    text: Emily's bedroom (complete with 1D poster!)
+  - name: emily2.JPG 
+    text: The other end of Emily's room and another 1D poster!
+  - name: single.JPG  
+    text: Guest single room (view 1)
+  - name: single2.JPG 
+    text: Guest single room (view 2)
+  - name: patio.JPG  
+    text: The patio which is immediately outside the house. The table has 6 chairs, there are also loungers and a comfortable swing
+  - name: garden.JPG 
+    text: A view of the garden from the roof outside the guest bedroom
   - name: climb.JPG
-    text: The third image
+    text: The latest addition to the garden
+  - name: cornwall.JPG 
+    text: Views from the guest bedroom. You can see Cornwall in the distance
+- id: outandabout
+  description: Around the area
+  imagefolder: /assets/outandabout
+  images:
+  - name: surf.JPG
+    text: Spencer and Emily bodyboarding at a local beach this summer
+  - name: jennycliff.JPG 
+    text: A view of Plymouth from Jennycliff, one of our favourite walks
+- id: pastexchanges
+  description: Past exchanges
+  imagefolder: /assets/pastexchanges
+  images:
+  - name: bavaria.JPG 
+    text: Us on an exchange in 2014 in Bavaria

@@ -8,16 +8,16 @@ layout: default
 
 {% for gallery in site.data.galleries %}
   {% if gallery.id == page.galleryid %}
-    <h1>{{ gallery.description }}</h1>
-    <ol>
+    <h2>{{ gallery.description }}</h2>
+    <ul style="list-style-type:none">
     {% for image in gallery.images %}
       <li>
           <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" data-title="{{ image.text }}">
-          <img class="example-image" src="{{ gallery.imagefolder }}/{{ image.name }}">
+          <img class="example-image" src="{{ gallery.imagefolder }}/{{ image.name }}" alt="{{ image.text }}" style="width:152px;height:114px">
         </a>
       </li>
     {% endfor %}
-    </ol>
+    </ul>
   {% endif %}
 {% endfor %}
 

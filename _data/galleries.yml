@@ -1,0 +1,10 @@
+- id: home
+  description: This is a gallery of our home
+  imagefolder: /assets/home
+  images:
+  - name: bathroom.JPG
+    text: The first image
+  - name: bavaria.JPG
+    text: The second image
+  - name: climb.JPG
+    text: The third image
